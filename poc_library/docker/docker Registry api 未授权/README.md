@@ -5,6 +5,7 @@ Docker Registry是一个无状态，高度可扩展的服务器端应用程序�
 
 ### 二 漏洞利用
 https://github.com/NotSoSecure/docker_fetch
+![img.png](img.png)
 
 ### 三 漏洞修复
 限制访问来源
