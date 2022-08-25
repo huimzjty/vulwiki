@@ -6,7 +6,12 @@ dubbo 因配置不当导致未授权访问漏洞。攻击者可利用此漏洞�
 
 ### 二 漏洞利用
 方式1  
-![img.png](img.png)
+连接dubbo服务  
+nc  
+![img.png](img.png)  
+telnet  
+![img_1.png](img_1.png)
+
 方式2  
 直接插入invoke fastjson POC
 
