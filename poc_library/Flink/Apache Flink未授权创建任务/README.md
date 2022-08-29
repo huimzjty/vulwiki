@@ -17,7 +17,9 @@ public class Main {
     }
 }
 ```
-![img.png](img.png)
+![img.png](img.png)  
+如果UI不支持，可访问接口创建任务  
+https://nightlies.apache.org/flink/flink-docs-release-1.3/monitoring/rest_api.html#submitting-programs
 
 
 ### 三 漏洞修复
