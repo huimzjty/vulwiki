@@ -30,6 +30,15 @@ fastjson <= 1.2.68
 ### 三 漏洞修复
 升级并开启safeMode或不用fastjson
 
+safeMode开启
+```java
+import com.alibaba.fastjson.parser.ParserConfig;
+
+ParserConfig.getGlobalInstance().setSafeMode(true);
+```
+
+![img_1.png](img_1.png)
+
 ### 四 漏洞分析
 ![img.png](img.png)
 
