@@ -8,11 +8,18 @@ etcd是一个具有强一致性的分布式 key-value 存储组件。采用类�
 ### 二 漏洞利用
 https://github.com/etcd-io/etcd/releases/  
 mac下载第一个
+![img.png](img.png)
 
 利用命令  
+这种是使用etcdctl 3版本
 `./etcdctl --endpoints={IP}:{端口} get / --prefix`
-![img.png](img.png)
 ![img_1.png](img_1.png)
+
+版本可以通过 `export ETCDCTL_API=3`  `export ETCDCTL_API=2` 切换
+
+通过basic认证修复后链接效果，提示缺了user参数
+![img_2.png](img_2.png)
+
 
 ### 三 漏洞修复
 参考 https://www.anquanke.com/post/id/236831  
