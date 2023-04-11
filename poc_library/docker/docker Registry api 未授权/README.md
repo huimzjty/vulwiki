@@ -4,7 +4,7 @@ Docker Registry是一个无状态，高度可扩展的服务器端应用程序�
 我们可以通过Docker Registry拉出任何容器映像并读取所有者进行的任何更改。还可以上传blob并对docker image进行更改。放置后门等。
 
 ### 二 漏洞利用
-https://github.com/NotSoSecure/docker_fetch
+https://github.com/NotSoSecure/docker_fetch  
 ![img.png](img.png)
 
 ### 三 漏洞修复
